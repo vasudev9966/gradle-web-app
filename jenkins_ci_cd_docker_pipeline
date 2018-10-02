@@ -4,8 +4,14 @@ node{
         git credentialsId: 'Git-Credentials', url: 'https://github.com/balujava/gradle-web-app.git',branch: 'master'
     }
     
-    stage('Gradle Clean Build'){
-        sh 'gradle clean build'
+   stage("Gradle Clean Build With Installation"){
+      def GradleHome = tool name: 'Gradle-4.10.2', type: 'gradle'
+      def gradleCMD = "${GradleHome}/bin/gradle"
+      sh "${gradleCMD} clean build"
+    }
+    
+    stage('Gradle Clean Build With Wrapper'){
+        sh 'gradlew clean build'
     }
     
     stage('Build Docker Image'){
