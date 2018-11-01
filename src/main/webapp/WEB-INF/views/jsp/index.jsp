@@ -65,7 +65,7 @@
 
 	<hr>
 	<footer>
-		<p>&copy; Rushi Technologies 2018</p>
+		<p>&copy; Mithun Technologies 2018</p>
 	</footer>
 </div>
 
