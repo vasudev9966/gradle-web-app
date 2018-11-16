@@ -43,7 +43,7 @@
 			<h2>Heading</h2>
 			<p>ABC</p>
 			<p>
-				<a class="btn btn-default" href="#" role="button">View details</a>
+				<a class="btn btn-default" href="#" role="button">Updated To Test Tomcat</a>
 			</p>
 		</div>
 		<div class="col-md-4">
